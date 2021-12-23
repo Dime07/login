@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) { //saat button dengan name submit ditekan, maka me
     $password = md5($_POST['password']); //mengisi variabel password yang sudah di hash atau enkripsi dengan md5
 
     $result = mysqli_query($db, "SELECT * FROM user WHERE email='$email' AND password='$password'"); //memasukkan data email dan password ke database tabel user
-    if ($result->num_rows > 0) { // kondisi jika email dan password ada di database
+    if ($result->num_rows > 0) { 
         $row = mysqli_fetch_assoc($result); 
         $_SESSION['username'] = $row['username'];
         header("Location: ../../home.php"); //diarahin ke home.php

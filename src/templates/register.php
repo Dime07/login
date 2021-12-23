@@ -51,7 +51,8 @@ if(isset($_POST['Submit'])){ //ketika button dengan name Submit maka dibawah ini
 
             <button class="form__button" type="submit" name="Submit">Continue</button>
             <p class="form__text">
-                <a class="form__link" href="./login.php" id="linkCreateAccount">Already have an account? login</a> //kalau udah punya akun arahin ke login
+                <!-- //kalau udah punya akun arahin ke login -->
+                <a class="form__link" href="./login.php" id="linkCreateAccount">Already have an account? login</a> 
             </p>
         </form>
     </div>
