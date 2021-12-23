@@ -1,3 +1,8 @@
+<?php 
+if (isset($_SESSION['username'])=== false) { //jika sessionnya salah atau tidak ada
+  header("Location: ./login.php"); //ngarahin ke home kalau udah login
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -83,73 +88,119 @@
         <div class="container-fluid">
           <div class="row text-center padding">
             <div class="col-md-12 selection-item item-content">
-              <h1 class="text-center">Mari Belajar HTML</h1>
+              <h1 class="text-center">Praktik CSS</h1>
               <div class="main-content card text-justify">
                 <p>
-                  HTML memang bahasa yang wajib dipelajari, bagi yang mau
-                  menjadi web developer. Karena… HTML merupakan bahasa dasar
-                  untuk membuat web.
+                  Segera setelah kita mengetahui bagaimana sebuah file CSS
+                  ditulis, ada baiknya jika kita langsung menggunakan ilmu yang
+                  telah kita ketahui ke dalam praktik agar lebih terbiasa dan
+                  lebih mudah diingat secara tidak langsung oleh pikiran kita.
+                  Yuk langsung saja kita mulai ~!
                 </p>
                 <p>
-                  Saya yakin, kamu sudah pernah mendengar HTML sebelumnya. Tapi
-                  tidak ada salahnya membaca kebali artikel ini. Pada tutorial
-                  ini, kita akan benar-benar membahas dari nol hingga kamu bisa
-                  membuat halaman HTML sendiri. Baiklah… Mari kita mulai!
-                </p>
-                <h2>Apa itu HTML ?</h2>
-                <p>
-                  Menurut Wikipedia, HTML atau HyperText Markup Language
-                  merupakan sebuah bahasa markah untuk membuat halaman web.
-                </p>
-                <p>
-                  Jadi, HTML itu adalah sebuah bahasa yang menggunakan markup
-                  atau penanda untuk membuat halaman web. Penanda atau markup
-                  ini, nanti akan kita sebut dengan Tag. HTML berperan untuk
-                  menentukan struktur konten dan tampilan dari sebuah web.
-                </p>
-                <figure>
-                  <img
-                    src="https://www.petanikode.com/img/html/dasar/html-css-js.png"
-                    alt=""
-                  />
-                  <figcaption>
-                    Gambar 1.1 Rekayasa tampilan sebuah website menggunakan
-                    bangunan
-                  </figcaption>
-                </figure>
-                <p>
-                  Dalam membuat halaman web, HTML tidak sendirian. Ada bahasa
-                  lain lagi yang menjadi pelengkapnya, yakni CSS dan Javascript.
-                  CSS adalah bahasa khusus yang digunakan untuk memperindah
-                  tampilan web. Lalu Javascript bertugas untuk membuat halaman
-                  web menjadi hidup. Karena dengan Javascript, kita dapat
-                  menentukan fungsi-fungsi maupun efek yang akan diterapkan di
-                  website.
-                </p>
-                <p class="credits">
                   <i
-                    >Sumber Materi :
-                    <a href="https://www.petanikode.com/html-dasar/" target="_blank"
-                      >Belajar HTML dari Nol: Pengenalan Dasar HTML untuk Pemula
-                    </a></i
+                    >Perlu diingat bahwa elemen HTML menggunakan box model untuk
+                    bisa ditampilkan pada layar pengguna, yang artinya sebuah
+                    elemen tampil menyerupai kotak yang nantinya kita desain di
+                    CSS.</i
                   >
                 </p>
+                <h2 class="text-center">
+                  Crash Course CSS by
+                  <a
+                    href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
+                    >Traversy Media</a
+                  >
+                </h2>
+                <figure>
+                  <iframe
+                    class="content"
+                    height="100%"
+                    src="https://www.youtube.com/embed/yfoY53QXEnI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
+                <p>
+                  Brad Traversy telah menjadi programmer selama sekitar 12 tahun 
+                  dan mengajar selama hampir 5 tahun. Dia adalah pemilik Traversy
+                  Media yang merupakan saluran YouTube pengembangan web yang
+                  sukses dan berspesialisasi dalam segala hal mulai dari HTML5
+                  hingga kerangka kerja ujung depan seperti Angular serta 
+                  teknologi sisi server seperti Node.js, PHP, dan Python. Brad 
+                  telah menguasai menjelaskan topik yang sangat kompleks dengan
+                  cara yang sederhana yang sangat dimengerti.                      
+                </p>
+                <h2 class="text-center">
+                  Crash Course CSS by
+                  <a
+                    href="https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow"
+                    >DesignCourse</a
+                  >
+                </h2>
+                <figure>
+                  <iframe
+                    class="content"
+                    height="100%"
+                    src="https://www.youtube.com/embed/D-h8L5hgW-w"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </figure>
+                <p>
+                  Gary Simon telah bekerja secara eksklusif sebagai freelance 
+                  designer dan design instructor selama lebih dari 15 tahun. 
+                  Setelah bekerja dengan klien besar di banyak proyek identitas
+                  dan desain web, Gary memiliki pemahaman yang kuat tentang
+                  banyak teknologi dan keterampilan seputar industri desain
+                  dan pengembangan.
+                </p>
+                <div class="tips">
+                  <h2>Tips & Trik</h2>
+                  <p>
+                    Pembelajaran CSS diawal akan sangat sulit ketika kamu masih
+                    seorang yang baru membiasakan diri dengan pemrograman. Akan
+                    tetapi seiring berjalannya waktu, selama kamu rajin membaca
+                    dokumentasi terkait kebutuhan styling kamu dan
+                    mempraktikannya, saya percaya kamu dapat terbiasa dengan
+                    mudah nantinya.
+                  </p>
+                  <p>
+                    Jika kamu bingung harus memulai dari mana, kamu bisa
+                    mengikuti guide line atau tutorial yang akan diajarkan
+                    disini mulai dari awal hingga akhir.
+                    <ul>
+                      <li>
+                        <a href="https://www.w3schools.com/css/">w3schools.com
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/">freeCodeCamp.org
+                        </a>
+                      </li>
+                    </ul>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-md-12 selection-item item-number">
               <ul class="no-bullets">
                 <li>
-                  <a href="/src/templates/html5.html" class="btn btn-light"
+                  <a href="/src/templates/css-1.html" class="btn btn-light"
                     >1</a
                   >
                 </li>
                 <li>
-                  <a href="/src/templates/html5-2.html" class="btn btn-light"
+                  <a href="/src/templates/css-2.html" class="btn btn-light"
                     >2</a
                   >
                 </li>
                 <li>
-                  <a href="/src/templates/html5-3.html" class="btn btn-light"
+                  <a href="/src/templates/css-3.html" class="btn btn-light"
                     >3</a
                   >
                 </li>

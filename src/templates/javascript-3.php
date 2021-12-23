@@ -1,3 +1,8 @@
+<?php 
+if (isset($_SESSION['username'])=== false) { //jika sessionnya salah atau tidak ada
+  header("Location: ./login.php"); //ngarahin ke home kalau udah login
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

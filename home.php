@@ -89,10 +89,10 @@ session_start(); // untuk memulai session
           <div class="carousel-caption">
             <h2 class="display-2">Let's Coding</h2>
             <h3>Which One Do You Prefer ?</h3>
-            <a href="/src/templates/html5.html" class="btn btn-primary btn-lg"
+            <a href="../src/templates/html5.php" class="btn btn-primary btn-lg"
               >FRONT - END</a
             >
-            <a href="/src/templates/javascript-1.html" class="btn btn-primary btn-lg"
+            <a href="/src/templates/javascript-1.php" class="btn btn-primary btn-lg"
               >BACK - END</a
             >
           </div>
@@ -124,7 +124,7 @@ session_start(); // untuk memulai session
             <h3>HTML5</h3>
             <p>The skeleton of everything that you see in your browser.</p>
             <a
-              href="/src/templates/html5.html"
+              href="./src/templates/html5.php"
               type="button"
               class="btn btn-outline-primary btn-md"
               >Learn HTML5</a
@@ -135,7 +135,7 @@ session_start(); // untuk memulai session
             <h3>CSS</h3>
             <p>Decoration, color, design and layouting of every component.</p>
             <a
-              href="/src/templates/css-1.html"
+              href="./src/templates/css-1.php"
               type="button"
               class="btn btn-outline-primary btn-md"
               >Learn CSS3</a
@@ -146,7 +146,7 @@ session_start(); // untuk memulai session
             <h3>JAVASCRIPT</h3>
             <p>What actually happened behind the interactive component.</p>
             <a
-              href="/src/templates/javascript-1.html"
+              href="./src/templates/javascript-1.php"
               type="button"
               class="btn btn-outline-primary btn-md"
               >Learn Javascript</a

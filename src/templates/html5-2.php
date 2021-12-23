@@ -1,3 +1,8 @@
+<?php 
+if (isset($_SESSION['username'])=== false) { //jika sessionnya salah atau tidak ada
+  header("Location: ./login.php"); //ngarahin ke home kalau udah login
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -83,40 +88,45 @@
         <div class="container-fluid">
           <div class="row text-center padding">
             <div class="col-md-12 selection-item item-content">
-              <h1 class="text-center">Praktik HTML</h1>
+              <h1 class="text-center">Kurikulum HTML</h1>
               <div class="main-content card text-justify">
                 <p>
-                  Setelah menonton penjelasan dari tag tag HTML yang telah
-                  dijelaskan oleh Mosh Hamedani, bagaimana kalau kita sekarang
-                  langsung melakukan praktik membuat sebuah website portofolio
-                  yang tentu saja lebih kompleks daripada apa yang telah
-                  dijelaskan oleh Mosh Hamedani. Apakah kamu tertarik ?
+                  Setelah mengetahui tentang apa itu HTML, lantas bagaimana kita
+                  bisa mempelajari bahasa pemrograman tersebut ?
                 </p>
                 <p>
-                  Disini saya sudah menyertakan rekomendasi website portofolio
-                  yang dibuat dengan menggunakan HTML dan CSS serta Javascript
-                  untuk melakukan operasi interaktif terhadap tombol - tombol
-                  yang digunakan. "Loh ? kok sebelumnya hanya belajar HTML
-                  sekarang bertemu dengan CSS dan Javascript ?" Kira-kira itulah
-                  yang ada di benak teman - teman kan ? <i>No Worries</i>,
-                  karena untuk pembelajaran ini kita hanya akan fokus kepada
-                  bagian HTMLnya saja. Tentu saja untuk bagian CSS dan
-                  Javascript dapat kamu pelajari secara otodidak jika kamu
-                  tertarik.
+                  Nah sekarang saya akan memandu kalian tentang apa saja yang
+                  perlu kita pelajari tentang HTML, akan tetapi karena banyaknya
+                  materi yang perlu dijelaskan dalam ini, kami akan menggunakan
+                  pembelajaran dari salah satu sumber pengetahuan kami, yakni
+                  Mosh Hamedani.
                 </p>
-                <h2 class="text-center">
-                  Website Project By
-                  <a
-                    href="https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ/videos"
-                    target="_blank"
-                    >WEB CIFAR 2021</a
-                  >
-                </h2>
+                <h2>Profil Mosh Hamedani</h2>
+                <figure>
+                  <img
+                    id="mosh-hamedani"
+                    src="/src/img/Mosh Hamedani.jpg"
+                    alt="Mosh Hamedani Picture"
+                  />
+                </figure>
+                <p>
+                  Mosh Hamedani adalah seorang figur senior software engineer
+                  yang memiliki spesialisasi di bidang pengembangan aplikasi web
+                  dengan ASP.NET MVC, Web API, Entity Framework, Angular,
+                  Backbone HTML5 dan CSS.
+                </p>
+                <p>
+                  Beliau juga memiliki keahlian dalam pemrograman lain seperti
+                  Python, MySQL, React dan masih banyak lagi tentunya. Saat ini
+                  beliau sudah berhenti dari pekerjaannya sebagai senior
+                  software engineer dan fokus kepada mengajar course atau kelas
+                  kelas online. Berikut adalah videonya.
+                </p>
                 <figure>
                   <iframe
                     class="content"
                     height="100%"
-                    src="https://www.youtube.com/embed/ZFQkb26UD1Y"
+                    src="https://www.youtube.com/embed/8TnBZ8rom9c"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -124,46 +134,34 @@
                   ></iframe>
                 </figure>
                 <p>
-                  WEB CIFAR adalah tim yang terdiri dari beberapa orang kreatif
-                  yang membuat situs web dengan penuh semangat. Mereka memiliki
-                  klien di seluruh dunia dan bekerja dengan lebih dari 50+ klien
-                  dan telah menyelesaikan 70+ proyek. Biarkan kami membantu Anda
-                  membuat situs web impian Anda dan membantu Anda mengembangkan
-                  bisnis menggunakan pengalaman kami.
+                  Meski tidak mengenalnya secara langsung, beliau adalah salah
+                  satu karakter yang sangat mempengaruhi hidup saya saat ini
+                  loh, karena sempat belajar python di course onlinenya.
+                  Karenanya saya ingin berbagi tentang pengetahuan HTML dengan
+                  materi yang dijelaskan oleh Mosh Hamedani. Materi yang
+                  dijelaskan padat namun tidak terlalu banyak karena memang
+                  hanya menjelaskan sedikit gambaran pembuatan HTML.
                 </p>
-                <h2 class="text-center">
-                  Website Project By
-                  <a
-                    href="https://www.youtube.com/c/DailyTuition/videos"
-                    target="_blank"
-                    >Daily Tuition</a
-                  >
-                </h2>
                 <figure>
                   <iframe
                     class="content"
                     height="100%"
-                    src="https://www.youtube.com/embed/CrSC1ZA9j0M"
+                    src="https://www.youtube.com/embed/qz0aGYrrlhU"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </figure>
-                <p>
-                  Daily Tuition membuat beberapa Desain Situs Web yang
-                  Menakjubkan. Mereka mendesain sebagian besar tutorial situs
-                  web. Kamu juga bisa mempelajari bahasa pemrogramana lain
-                  disini akan Belajar Bahasa Wordpress, Asp.net, HTML, CSS,
-                  Javascript, Jquery dan PHP.
-                </p>
                 <div class="tips">
                   <h2>Tips & Trik</h2>
                   <p>
-                    Jika melihat pembuatan project website secara langsung
-                    tampak sulit maka kamu bisa mencoba melihat deskripsi pada
-                    halaman video di YouTube, lalu melakukan fork pada
-                    Repository GitHub yang terlampir.
+                    Agar lebih cepat mudah memahami pastikan kamu langsung
+                    melakukan percobaan setiap ada perubahan atau penggunaan tag
+                    atau elemen HTML yang baru kamu pelajari. Dan agar materi
+                    lebih dapat diserap, kamu juga bisa melakukan pencarian
+                    otodidak terkait tag atau elemen yang masih kurang
+                    dimengerti.
                   </p>
                 </div>
               </div>
